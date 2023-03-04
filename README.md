@@ -1,4 +1,14 @@
-# Angular
+# Angular FESTIVAL liste
+
+Une web application qui permet de lister des festivals et de référencer les éditeurs ainsi que leurs activités présentes.
+
+![alt text](https://github.com/charley04310/Angular-TP1/blob/main/src/assets/appgit.png?raw=true)
+
+## API Reference
+
+Il n'ya pas d'API tout est stocké directement dans le cloud firebase pour un simple prototypage
+
+![alt text](https://github.com/charley04310/Angular-TP1/blob/main/src/assets/social.png?raw=true)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
