@@ -1,0 +1,24 @@
+<h1 class="page-title">Liste des Éditeurs du festival</h1>
+
+<table class="festival-table" *ngIf="listeEditeur">
+  <tr>
+    <th>Nom société</th>
+    <th>Addresse</th>
+    <th>Numéro de téléphone</th>
+
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let editeur of listeEditeur" class="festival-row">
+    <td>{{ editeur.nom }}</td>
+    <td>{{ editeur.adresse }}</td>
+    <td>{{ editeur.telephone }}</td>
+    <td>
+      <button class="modifier" (click)="setNewEditeur(editeur)">
+        Modifier
+      </button>
+      <button (click)="goToDetailsPage(editeur)" class="consulter">
+        Consulter
+      </button>
+    </td>
+  </tr>
+</table>

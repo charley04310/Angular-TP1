@@ -1,0 +1,49 @@
+/* Style the page title */
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style the table */
+.festival-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.festival-table th,
+.festival-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.festival-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Style the festival rows */
+.festival-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style the buttons */
+button {
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  text-transform: uppercase;
+}
+
+button:nth-child(1) {
+  background-color: orange;
+}
+
+button:nth-child(2) {
+  background-color: green;
+}

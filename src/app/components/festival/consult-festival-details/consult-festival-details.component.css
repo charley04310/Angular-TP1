@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+li {
+  list-style-type: none;
+}
+
+.card-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-description {
+  margin-left: 24px;
+}
+
+.card-description h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-description li {
+  font-size: 16px;
+  margin-bottom: 4px;
+}

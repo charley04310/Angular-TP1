@@ -1,0 +1,21 @@
+<form [formGroup]="jeuFormData" (ngSubmit)="validate()">
+  <h1>{{ jeu ? "Modifier un jeu" : "Ajouter un jeu" }}</h1>
+
+  <label>Nom: <input type="text" formControlName="nom" /></label>
+  <label>Type: <input type="text" formControlName="type" /></label>
+  <label>Age minimum: <input type="text" formControlName="age_min" /></label>
+  <label>Age maximum: <input type="text" formControlName="age_max" /></label>
+  <label
+    >Nombre de joueurs minimum:
+    <input type="text" formControlName="nb_joueurs_min"
+  /></label>
+  <label
+    >Nombre de joueurs maximum:
+    <input type="text" formControlName="nb_joueurs_max"
+  /></label>
+  <label>Durée du jeu: <input type="text" formControlName="duree" /></label>
+
+  <button type="submit" [disabled]="!jeuFormData.valid">
+    {{ jeu ? "Modifier un jeu" : "Ajouter un jeu" }}
+  </button>
+</form>

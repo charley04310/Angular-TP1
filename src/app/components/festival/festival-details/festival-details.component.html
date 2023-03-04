@@ -1,0 +1,19 @@
+<h1>{{ festival ? "Modifier festival" : "Ajouter un festival" }}</h1>
+
+<form [formGroup]="festivalGroup" (ngSubmit)="validate()" *ngIf="festivalGroup">
+  <label>Name: <input type="text" formControlName="name" /></label>
+  <label>Entrance: <input type="text" formControlName="entrancePrice" /></label>
+  <label>Room: <input type="text" formControlName="roomPrice" /></label>
+  <button type="submit" [disabled]="!festivalGroup.valid">
+    {{ festival ? "Modifier un festival" : "Ajouter le festival" }}
+  </button>
+</form>
+
+<div class="action-button-block" *ngIf="festival">
+  <button class="delete-button" (click)="deleteFestival()">
+    Supprimer le festival
+  </button>
+  <button class="add-button" (click)="addFestivalView()">
+    Nouveau festival
+  </button>
+</div>

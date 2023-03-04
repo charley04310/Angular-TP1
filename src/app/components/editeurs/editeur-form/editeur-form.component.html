@@ -1,0 +1,18 @@
+<h1>{{ editeur ? "Modifier un Editeur" : "Ajouter un éditeur" }}</h1>
+
+<form [formGroup]="editeurFormData" (ngSubmit)="validate()">
+  <label>Nom: <input type="text" formControlName="nom" /></label>
+  <label>Adresse: <input type="text" formControlName="adresse" /></label>
+  <label>Téléphone: <input type="text" formControlName="telephone" /></label>
+  <button type="submit" [disabled]="!editeurFormData.valid">
+    {{ editeur ? "Modifier l'éditeur" : "Ajouter un éditeur" }}
+  </button>
+</form>
+<!-- <div class="action-button-block" *ngIf="festival">
+  <button class="delete-button" (click)="deleteFestival()">
+    Supprimer l'editeur
+  </button>
+  <button class="add-button" (click)="addFestivalView()">
+    Nouvelle editeur
+  </button>
+</div> -->

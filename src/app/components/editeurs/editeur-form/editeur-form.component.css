@@ -1,0 +1,48 @@
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid gray;
+}
+button {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  width: 200px;
+  cursor: pointer;
+}
+.delete-button {
+  background-color: red;
+}
+
+.add-button {
+  background-color: green;
+}
+.action-button-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+button:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}

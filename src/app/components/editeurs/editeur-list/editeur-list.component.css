@@ -1,0 +1,48 @@
+.page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.festival-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.festival-table th {
+  background-color: #ff7f50;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+.festival-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.festival-table .festival-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.festival-table .festival-row:hover {
+  background-color: #e6e6e6;
+}
+
+.festival-table button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.festival-table button.modifier {
+  background-color: #ff7f50;
+}
+
+.festival-table button.consulter {
+  background-color: green;
+}

@@ -1,0 +1,17 @@
+<div class="card" *ngIf="festival">
+  <div class="card-image">
+    <img src="https://via.placeholder.com/150" alt="Festival Image" />
+  </div>
+  <div class="card-description">
+    <ul>
+      <h2>{{ festival.name }}</h2>
+      <li>Table: {{ festival.tablemax_1 }}</li>
+      <li>Prix Espace Entrée: {{ festival.tableprice_1 | currency }}</li>
+      <li>Prix Espace Salle: {{ festival.sqmprice_1 | currency }}</li>
+      <li>Prix Espace Buvette: {{ festival.tablebooked_1 | currency }}</li>
+      <li>m2 Entrée: {{ festival.sqmbooked_1 | currency }}</li>
+      <li>m2 Salle: {{ festival.tablemax_2 | currency }}</li>
+      <li>m2 Buvette: {{ festival.tableprice_2 | currency }}</li>
+    </ul>
+  </div>
+</div>

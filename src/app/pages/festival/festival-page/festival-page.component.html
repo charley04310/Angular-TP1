@@ -1,0 +1,13 @@
+<app-header></app-header>
+<app-consult-festival-details
+  [festival]="currentFestival | async"
+></app-consult-festival-details>
+
+<app-editeur-list
+  [listeEditeur]="editeurs | async"
+  (editeurSelectionne)="modifierEditeur($event)"
+></app-editeur-list>
+
+<app-editeur-form
+  [editeur]="editeurSelectionne ? editeurSelectionne : null"
+></app-editeur-form>

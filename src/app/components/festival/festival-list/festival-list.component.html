@@ -1,0 +1,25 @@
+<h1 class="page-title">Liste des festivals</h1>
+
+<table class="festival-table">
+  <tr>
+    <th>Name</th>
+    <th>Tables</th>
+    <th>Prix Espace entrée</th>
+    <th>Prix Espace Salle</th>
+    <th>Prix Espace Buvette</th>
+
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let festival of listeFestival" class="festival-row">
+    <td>{{ festival.name }}</td>
+    <td>{{ festival.tableTotal }}</td>
+    <td>{{ festival.tableprice_1 | currency }}</td>
+    <td>{{ festival.sqmprice_1 | currency }}</td>
+    <td>{{ festival.sqmprice_2 | currency }}</td>
+
+    <td>
+      <button (click)="setNewFestival(festival)">Éditer</button>
+      <button (click)="goToDetailsPage(festival)">Consulter</button>
+    </td>
+  </tr>
+</table>
